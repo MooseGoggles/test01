@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>soma.fm</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" onclick="setStyle(this.id);"  href="http://somafm.com/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" onclick="setStyle(this.id);"  href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+		html, body { height: 100% ; background-color: #1a1a1a;}
+		iframe { position: absolute; height: 100%; width:740px; left: 200px; border: none;}
+		.w3-bar-block .w3-bar-item { padding: 0px 16px; xfont-family: 'Comic Sans MS'}
+	</style>
+	<script>
+		function setStyle(s) {
+			// set all anchor styles to normal
+			var a = document.getElementsByClassName("w3-button");
+			for(var i = (a.length - 1); i >= 0; i--) {
+				a[i].style.fontWeight  = "400";
+				a[i].style.backgroundColor  = "";
+			}
+			// set the clicked one to bold
+			document.getElementById(s).style.fontWeight  = "900";
+			document.getElementById(s).style.backgroundColor  = "#ccc";
+		}
+	</script>
+</head>
+<body>
+	<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:200px">
+		<h3 class="w3-bar-item">SOMA.FM</h3>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="7soul"          href="http://somafm.com/player/#/now-playing/7soul">7soul</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="bagel"          href="http://somafm.com/player/#/now-playing/bagel">bagel</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="beatblender"    href="http://somafm.com/player/#/now-playing/beatblender">beatblender</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="bootliquor"     href="http://somafm.com/player/#/now-playing/bootliquor">bootliquor</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="brfm"           href="http://somafm.com/player/#/now-playing/brfm">brfm</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="cliqhop"        href="http://somafm.com/player/#/now-playing/cliqhop">cliqhop</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="covers"         href="http://somafm.com/player/#/now-playing/covers">covers</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="deepspaceone"   href="http://somafm.com/player/#/now-playing/deepspaceone">deepspaceone</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="defcon"         href="http://somafm.com/player/#/now-playing/defcon">defcon</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="digitalis"      href="http://somafm.com/player/#/now-playing/digitalis">digitalis</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="doomed"         href="http://somafm.com/player/#/now-playing/doomed">doomed</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="dronezone"      href="http://somafm.com/player/#/now-playing/dronezone">dronezone</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="dubstep"        href="http://somafm.com/player/#/now-playing/dubstep">dubstep</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="earwaves"       href="http://somafm.com/player/#/now-playing/earwaves">earwaves</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="fluid"          href="http://somafm.com/player/#/now-playing/fluid">fluid</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="folkfwd"        href="http://somafm.com/player/#/now-playing/folkfwd">folkfwd</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="groovesalad"    href="http://somafm.com/player/#/now-playing/groovesalad">groovesalad</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="illstreet"      href="http://somafm.com/player/#/now-playing/illstreet">illstreet</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="indiepop"       href="http://somafm.com/player/#/now-playing/indiepop">indiepop</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="lush"           href="http://somafm.com/player/#/now-playing/lush">lush</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="metal"          href="http://somafm.com/player/#/now-playing/metal">metal</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="missioncontrol" href="http://somafm.com/player/#/now-playing/missioncontrol">missioncontrol</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="poptron"        href="http://somafm.com/player/#/now-playing/poptron">poptron</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="secretagent"    href="http://somafm.com/player/#/now-playing/secretagent">secretagent</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="seventies"      href="http://somafm.com/player/#/now-playing/seventies">seventies</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="sf1033"         href="http://somafm.com/player/#/now-playing/sf1033">sf1033</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="silent"         href="http://somafm.com/player/#/now-playing/silent">silent</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="sonicuniverse"  href="http://somafm.com/player/#/now-playing/sonicuniverse">sonicuniverse</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="spacestation"   href="http://somafm.com/player/#/now-playing/spacestation">spacestation</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="suburbsofgoa"   href="http://somafm.com/player/#/now-playing/suburbsofgoa">suburbsofgoa</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="thetrip"        href="http://somafm.com/player/#/now-playing/thetrip">thetrip</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="thistle"        href="http://somafm.com/player/#/now-playing/thistle">thistle</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="u80s"           href="http://somafm.com/player/#/now-playing/u80s">u80s</a>
+		<h3 class="w3-bar-item">Radio</h3>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);"  id="wbal"          href="http://player.listenlive.co/35701">WBAL</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);"  id="wypr"          href="http://wypr.org/listen-live">WYPR</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);"  id="wtmd"          href="http://www.wtmd.org/player/player5-index.html">WTMD</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);"  id="rp"            href="http://www.radioparadise.com/rp_2a.php">Radio Paradise</a>
+		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);"  id="rain"          href="http://www.rainymood.com/">rain</a>
+	</div>
+	<iframe name="radio"></iframe>
+</body>
+</html>
