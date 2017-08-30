@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>soma.fm 3</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" onclick="setStyle(this.id);"  href="http://somafm.com/favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" onclick="setStyle(this.id);"  href="https://www.w3schools.com/w3css/4/w3.css">
+	<title>soma.fm</title>
+	<meta name="viewport"     content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="http://somafm.com/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet"    href="https://www.w3schools.com/w3css/4/w3.css">
 	<style>
 		html, body { height: 100% ; background-color: #1a1a1a;}
 		iframe { position: absolute; height: 100%; width:740px; left: 200px; border: none;}
-		.w3-bar-block .w3-bar-item { padding: 0px 16px; xfont-family: 'Comic Sans MS'}
+		.w3-bar-block .w3-bar-item { padding: 0px 16px; color: darkgray; background-color: #1a1a1a; }
 	</style>
 	<script>
 		function setStyle(s) {
@@ -19,13 +19,14 @@
 				a[i].style.backgroundColor  = "";
 			}
 			// set the clicked one to bold
-			document.getElementById(s).style.fontWeight  = "900";
+			document.getElementById(s).style.color            = "#111";
 			document.getElementById(s).style.backgroundColor  = "#ccc";
+			document.getElementById(s).style.fontWeight       = "900";
 		}
 	</script>
 </head>
 <body>
-	<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:200px">
+	<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:200px; background-color: #1a1a1a !important;">
 		<h3 class="w3-bar-item">SOMA.FM</h3>
 		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="7soul"          href="http://somafm.com/player/#/now-playing/7soul">7soul</a>
 		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="bagel"          href="http://somafm.com/player/#/now-playing/bagel">bagel</a>
