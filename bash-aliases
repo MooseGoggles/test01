@@ -1,0 +1,20 @@
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias goweb='cd /var/www/html/'
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+# normal user (green text)
+PS1='\[\e[0;36m\][AWS EC2] \[\e[0;32m\]\u\[\e[m\] \[\e[0;36m\]\w\[\e[m\] $ '
+# root (red inverse)
+PS1='\[\e[0;36m\][AWS EC2] \[\e[0;31;7m\]\u\[\e[m\] \[\e[0;36m\]\w\[\e[m\] $ '
+
+alias la='LC_COLLATE=C ls -alF --group-directories-first $1'
+alias editconf='sudo nano /etc/httpd/conf/httpd.conf'
+alias version='cat /etc/system-release; uname -a'
+alias dff='df -Ph | awk '"'"'{print $6, $2, $3, $4, $5}'"'"' | grep '"'"'/'"'"' | perl -e '"'"'binmode(STDOUT,":utf8");while(<>){chomp;($p) = $_ =~ /(\d+)%/;$s = 100-$p;$b=chr(9632)x int(($p/2)+0.5);$b.=chr(183)x($s/2);s/% .*/%/;print "$_ $b\n";}'"'"' | column -t '
+
