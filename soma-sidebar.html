@@ -15,18 +15,19 @@
 			// set all anchor styles to normal
 			var a = document.getElementsByClassName("w3-button");
 			for(var i = (a.length - 1); i >= 0; i--) {
-				a[i].style.fontWeight  = "400";
+				a[i].style.fontWeight       = "400";
+				a[i].style.color            = "darkgray";
 				a[i].style.backgroundColor  = "";
 			}
 			// set the clicked one to bold
+			document.getElementById(s).style.fontWeight       = "900";
 			document.getElementById(s).style.color            = "#111";
 			document.getElementById(s).style.backgroundColor  = "#ccc";
-			document.getElementById(s).style.fontWeight       = "900";
 		}
 	</script>
 </head>
 <body>
-	<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:200px; background-color: #1a1a1a !important;">
+	<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:180px; background-color: #1a1a1a !important;">
 		<h3 class="w3-bar-item">SOMA.FM</h3>
 		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="7soul"          href="http://somafm.com/player/#/now-playing/7soul">7soul</a>
 		<a class="w3-bar-item w3-button" target="radio" onclick="setStyle(this.id);" id="bagel"          href="http://somafm.com/player/#/now-playing/bagel">bagel</a>
